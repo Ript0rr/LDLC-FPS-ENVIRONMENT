@@ -2179,6 +2179,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 4734255813164150880, guid: dfdfe10ef0c63d74ab3e222bde1a558e,
     type: 3}
+--- !u!114 &135756641613574987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908021735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 368e535b0c2739a41a6d23ec9110a051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2114283753834967212
 GameObject:
   m_ObjectHideFlags: 0
