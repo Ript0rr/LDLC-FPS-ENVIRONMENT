@@ -22,6 +22,9 @@ public class CollectAnimals : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        AllerAuBateau();
+        if(other.gameObject.name =="zone animaux")
+        {
+            AllerAuBateau();
+        }
     }
 }
