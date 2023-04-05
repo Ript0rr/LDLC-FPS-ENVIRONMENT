@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
@@ -7,9 +9,11 @@ using UnityEngine.InputSystem;
 public class MoveTo : MonoBehaviour
 {
     public bool activated;
+    public bool bateau;
     public Transform goal;
     public NavMeshAgent agent;
-   
+    public Transform goal_end;
+    
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -32,7 +36,7 @@ public class MoveTo : MonoBehaviour
                 if(hit.collider.gameObject == this.gameObject)
                 {
                     activated = true;
-
+                    FindObjectOfType<CollectAnimals>().AddAnimal(this);
                 }
             }
         }
@@ -40,7 +44,14 @@ public class MoveTo : MonoBehaviour
         {
             Vector3 vc = (goal.position - transform.position);
             agent.destination = transform.position + vc.normalized * (vc.magnitude - 3f);
+
+            if (bateau)
+            {
+                agent.destination = goal_end.position;
+            }
         }
+
+      
     }
 
 }
