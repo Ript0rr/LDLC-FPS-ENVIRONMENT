@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectAnimals : MonoBehaviour
 {
-    List<MoveTo> animals;
+    List<MoveTo> animals = new List<MoveTo>();
 
     public void AddAnimal(MoveTo animal)
     {
@@ -23,5 +23,13 @@ public class CollectAnimals : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         AllerAuBateau();
+    }
+
+    public void TpAnimals(Vector3 pos)
+    {
+        foreach (MoveTo animal in animals)
+        {
+            animal.transform.position = pos;
+        }
     }
 }
