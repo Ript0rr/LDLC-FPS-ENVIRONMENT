@@ -9,6 +9,12 @@ public class teleportation1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        other.transform.position = pointDarrivee.position;
+        var ac = other.GetComponentInParent<CollectAnimals>();
+
+        if (ac != null)
+        {
+            ac.TpAnimals(pointDarrivee.position);
+            other.transform.position = pointDarrivee.position;
+        }
     }
 }

@@ -32,7 +32,11 @@ public class CollectAnimals : MonoBehaviour
     {
         foreach (MoveTo animal in animals)
         {
+            animal.agent.isStopped = true;
+            animal.agent.enabled = false;
             animal.transform.position = pos;
+            animal.agent.enabled = true;
+            animal.agent.isStopped = false;
         }
     }
 }
