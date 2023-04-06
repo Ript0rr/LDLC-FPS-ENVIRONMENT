@@ -14,10 +14,13 @@ public class MoveTo : MonoBehaviour
     public NavMeshAgent agent;
     public Transform goal_end;
     
+    public Transform[] destinations;
+    int currentIndex;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+
 
     }
 

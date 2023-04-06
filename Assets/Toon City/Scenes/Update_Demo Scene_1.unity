@@ -5382,6 +5382,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf65cd44365554e62af366732548513b, type: 3}
+--- !u!1 &173356773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 173356774}
+  m_Layer: 0
+  m_Name: Animal1destination1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &173356774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173356773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60.19, y: 0.1, z: 78.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &175955326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12809,6 +12840,7 @@ MonoBehaviour:
   goal: {fileID: 135756641613574986}
   agent: {fileID: 0}
   goal_end: {fileID: 1228168890}
+  destinations: []
 --- !u!1 &420535915 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000014234786886, guid: 27a8fc54dbdf845d78d8bb1acd9907c6,
@@ -19511,6 +19543,7 @@ MonoBehaviour:
   goal: {fileID: 135756641613574986}
   agent: {fileID: 0}
   goal_end: {fileID: 1228168890}
+  destinations: []
 --- !u!1001 &632221855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22263,6 +22296,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 728161551}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &728350734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 728350735}
+  m_Layer: 0
+  m_Name: Animal1destination2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &728350735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728350734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60.13, y: 0.58, z: 30.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &729764666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24851,6 +24915,8 @@ MonoBehaviour:
   goal: {fileID: 135756641613574986}
   agent: {fileID: 0}
   goal_end: {fileID: 1228168890}
+  destinations:
+  - {fileID: 0}
 --- !u!195 &816621471
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31513,6 +31579,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22836836, y: 0.72485876, z: 0.7248589}
   m_Center: {x: 0.009992386, y: -0.0000037246944, z: 0.0000019076467}
+--- !u!1 &1067977529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1067977530}
+  m_Layer: 0
+  m_Name: Animal1destination3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1067977530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067977529}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60.03, y: -0.143, z: 2.653}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1068224658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40876,6 +40973,7 @@ MonoBehaviour:
   goal: {fileID: 135756641613574986}
   agent: {fileID: 0}
   goal_end: {fileID: 1228168890}
+  destinations: []
 --- !u!1001 &1233974298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50654,6 +50752,7 @@ MonoBehaviour:
   goal: {fileID: 135756641613574986}
   agent: {fileID: 0}
   goal_end: {fileID: 1228168890}
+  destinations: []
 --- !u!1001 &1593260711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62493,6 +62592,7 @@ MonoBehaviour:
   goal: {fileID: 135756641613574986}
   agent: {fileID: 0}
   goal_end: {fileID: 1228168890}
+  destinations: []
 --- !u!1001 &1982922745
 PrefabInstance:
   m_ObjectHideFlags: 0
