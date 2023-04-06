@@ -43,12 +43,15 @@ public class MoveTo : MonoBehaviour
                     {
                         activated = true ;
                         FindObjectOfType<CollectAnimals>().AddAnimal(this);
+                        agent.speed = 20;
                     }
                     else
                     {
                         agent.destination = destinations[currentIndex].position;
                         currentIndex++;
-                        agent.speed = 25;
+                        agent.speed = 50;
+                        agent.angularSpeed = 360;
+                        agent.acceleration = 250;
                     }
                 }
             }
