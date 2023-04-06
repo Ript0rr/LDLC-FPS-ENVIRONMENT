@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -13,7 +14,6 @@ public class MoveTo : MonoBehaviour
     public Transform goal;
     public NavMeshAgent agent;
     public Transform goal_end;
-    
     public Transform[] destinations;
     int currentIndex;
 
@@ -37,10 +37,19 @@ public class MoveTo : MonoBehaviour
             //Action du rayon
             if (Physics.Raycast(ray, out hit))
             {
-                if(hit.collider.gameObject == this.gameObject)
+                if(hit.collider.gameObject == this.gameObject && !bateau)
                 {
-                    activated = true;
-                    FindObjectOfType<CollectAnimals>().AddAnimal(this);
+                    if (currentIndex == destinations.Length)
+                    {
+                        activated = true ;
+                        FindObjectOfType<CollectAnimals>().AddAnimal(this);
+                    }
+                    else
+                    {
+                        agent.destination = destinations[currentIndex].position;
+                        currentIndex++;
+                        agent.speed = 25;
+                    }
                 }
             }
         }

@@ -24916,7 +24916,9 @@ MonoBehaviour:
   agent: {fileID: 0}
   goal_end: {fileID: 1228168890}
   destinations:
-  - {fileID: 0}
+  - {fileID: 173356774}
+  - {fileID: 728350735}
+  - {fileID: 1067977530}
 --- !u!195 &816621471
 NavMeshAgent:
   m_ObjectHideFlags: 0
