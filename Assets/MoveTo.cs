@@ -14,6 +14,7 @@ public class MoveTo : MonoBehaviour
     public NavMeshAgent agent;
     public Transform goal_end;
     
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
