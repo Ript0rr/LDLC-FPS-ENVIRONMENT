@@ -10,13 +10,20 @@ public class CollectAnimals : MonoBehaviour
     {
         if(!animals.Contains(animal))    
             animals.Add(animal);
+    }        
+    public void RemoveAnimal(MoveTo animal)
+    {
+        if(animals.Contains(animal))
+               animals.Remove(animal);
     }
 
     void AllerAuBateau()
-    {
-        foreach (MoveTo animal in animals)
+    { 
+        for(int i = animals.Count-1; i >= 0; i--)
         {
+            MoveTo animal = animals[i];
             animal.bateau = true;
+            RemoveAnimal(animal);
         }
     }
 
