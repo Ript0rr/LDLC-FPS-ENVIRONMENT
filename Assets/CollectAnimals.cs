@@ -5,7 +5,7 @@ using UnityEngine;
 public class CollectAnimals : MonoBehaviour
 {
     List<MoveTo> animals = new List<MoveTo>();
-
+    public UIpoint _uIManager;  
     public void AddAnimal(MoveTo animal)
     {
         if(!animals.Contains(animal))    
@@ -24,17 +24,20 @@ public class CollectAnimals : MonoBehaviour
             MoveTo animal = animals[i];
             animal.bateau = true;
             RemoveAnimal(animal);
+            _uIManager.AddScore(1);
+
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name =="zone animaux")
+        if (other.gameObject.name == "zone animaux")
         {
             AllerAuBateau();
+
         }
     }
-
+       
     public void TpAnimals(Vector3 pos)
     {
         foreach (MoveTo animal in animals)
