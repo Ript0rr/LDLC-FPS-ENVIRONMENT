@@ -50,7 +50,7 @@ public class MoveTo : MonoBehaviour
                     {
                         agent.destination = destinations[currentIndex].position;
                         currentIndex++;
-                        agent.speed = 25;
+                        agent.speed = 20;
                         agent.angularSpeed = 360;
                         agent.acceleration = 250;
                     }

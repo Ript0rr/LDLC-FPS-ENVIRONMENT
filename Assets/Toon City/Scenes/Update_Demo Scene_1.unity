@@ -14663,7 +14663,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: -0.41
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!65 &480532147
@@ -17679,7 +17679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 762380245, guid: c05b7ad2deb845a4db7b02db81d485bf, type: 3}
       propertyPath: m_BaseOffset
-      value: -0.41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 762380246, guid: c05b7ad2deb845a4db7b02db81d485bf, type: 3}
       propertyPath: goal
@@ -17729,22 +17729,22 @@ PrefabInstance:
     - target: {fileID: 8275207111286816785, guid: c05b7ad2deb845a4db7b02db81d485bf,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8275207111286816785, guid: c05b7ad2deb845a4db7b02db81d485bf,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8275207111286816785, guid: c05b7ad2deb845a4db7b02db81d485bf,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275207111286816785, guid: c05b7ad2deb845a4db7b02db81d485bf,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8275207111286816785, guid: c05b7ad2deb845a4db7b02db81d485bf,
         type: 3}
@@ -17754,7 +17754,7 @@ PrefabInstance:
     - target: {fileID: 8275207111286816785, guid: c05b7ad2deb845a4db7b02db81d485bf,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 8275207111286816785, guid: c05b7ad2deb845a4db7b02db81d485bf,
         type: 3}
@@ -20626,7 +20626,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: -0.41
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &659534753
@@ -29644,7 +29644,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: -0.41
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1008842659
@@ -32379,7 +32379,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: 0.5
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1079511340
@@ -45070,7 +45070,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: -0.41
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1539744932
