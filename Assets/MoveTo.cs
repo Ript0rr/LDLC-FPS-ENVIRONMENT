@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
@@ -16,17 +17,17 @@ public class MoveTo : MonoBehaviour
     public Transform goal_end;
     public Transform[] destinations;
     int currentIndex;
-
+    Animator anim;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-
+        anim = GetComponent<Animator>();
 
     }
 
     void Update()
     {
-
+        anim.SetBool("isMoving", agent.velocity.magnitude > 0.1f);
         //Quand on fait clique gauche
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
@@ -49,7 +50,7 @@ public class MoveTo : MonoBehaviour
                     {
                         agent.destination = destinations[currentIndex].position;
                         currentIndex++;
-                        agent.speed = 50;
+                        agent.speed = 25;
                         agent.angularSpeed = 360;
                         agent.acceleration = 250;
                     }
