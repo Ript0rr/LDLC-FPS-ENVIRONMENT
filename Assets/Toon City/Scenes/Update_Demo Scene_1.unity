@@ -18000,8 +18000,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 750991227326871156, guid: b3400d2acd4bcfe44b2d8ec09de70f5f,
         type: 3}
+      propertyPath: m_text
+      value: "Bonjour, les animaux se sont \xE9chapp\xE9s de l'enclos ram\xE8ne les.
+        Clique sur eux pour qu'ils te suivent. Bonne chance !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 750991227326871156, guid: b3400d2acd4bcfe44b2d8ec09de70f5f,
+        type: 3}
       propertyPath: m_fontSize
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 750991227326871156, guid: b3400d2acd4bcfe44b2d8ec09de70f5f,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 750991227326871156, guid: b3400d2acd4bcfe44b2d8ec09de70f5f,
         type: 3}
